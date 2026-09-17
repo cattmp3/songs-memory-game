@@ -88,6 +88,6 @@ body {
 @media (max-width: 600px) {
     .memory-game {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto repeat(6, 1fr);
+        grid-template-rows: auto repeat(6, minmax(0, 1fr));
     }
 }

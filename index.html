@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Songs Memory Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <button id="restart">Play Again!!</button>
+
+    <section class="memory-game">
+
+        <h1>Match the song to its cover!</h1>
+
+        <div class="memory-card" data-framework="onedirection">
+            <img class="front-face" src="img3/onedirection.jpg" alt="One Direction">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio1/play1.mp3" data-framework="onedirection">
+            <img class="front-face" src="img3/play.jpg" alt="Infinity">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="thesmiths">
+            <img class="front-face" src="img4/thesmiths.jpg" alt="The Smiths">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio1/play2.mp3" data-framework="thesmiths">
+            <img class="front-face" src="img3/play.jpg" alt="There Is a Light That Never Goes Out">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+        
+        <div class="memory-card" data-framework="lanadelrey">
+            <img class="front-face" src="img2/lanadelrey.jpg" alt="Lana Del Rey">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio1/play3.mp3" data-framework="lanadelrey">
+            <img class="front-face" src="img3/play.jpg" alt="Video Games">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="theneighbourhood">
+            <img class="front-face" src="img4/theneighbourhood.jpg" alt="The Neighbourhood">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio1/play4.mp3" data-framework="theneighbourhood">
+            <img class="front-face" src="img3/play.jpg" alt="Cherry Flavoured">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="arianagrande">
+            <img class="front-face" src="img1/arianagrande.jpg" alt="Ariana Grande">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio1/play5.mp3" data-framework="arianagrande">
+            <img class="front-face" src="img3/play.jpg" alt="like i do">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+        
+        <div class="memory-card" data-framework="shawnmendes">
+            <img class="front-face" src="img3/shawnmendes.jpg" alt="Shawn Mendes">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio1/play6.mp3" data-framework="shawnmendes">
+            <img class="front-face" src="img3/play.jpg" alt="Treat You Better">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="oliviarodrigo">
+            <img class="front-face" src="img3/oliviarodrigo.jpg" alt="Olivia Rodrigo">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio1/play7.mp3" data-framework="oliviarodrigo">
+            <img class="front-face" src="img3/play.jpg" alt="stupid song">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="georgemichael">
+            <img class="front-face" src="img2/georgemichael.jpg" alt="George Michael">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio1/play8.mp3" data-framework="georgemichael">
+            <img class="front-face" src="img3/play.jpg" alt="Careless Whisper">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="hallandoates">
+            <img class="front-face" src="img1/hallandoates.jpg" alt="Daryl Hall & Jonh Oates">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio1/play9.mp3" data-framework="hallandoates">
+            <img class="front-face" src="img3/play.jpg" alt="Out of Touch">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="malcolmtodd">
+            <img class="front-face" src="img2/malcolmtodd.jpg" alt="Malcolm Todd">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio1/play10.mp3" data-framework="malcolmtodd">
+            <img class="front-face" src="img3/play.jpg" alt="Earrings">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="tameimpala">
+            <img class="front-face" src="img3/tameimpala.jpg" alt="Tame Impala">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio2/play11.mp3" data-framework="tameimpala">
+            <img class="front-face" src="img3/play.jpg" alt="Loser">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="michaeljackson">
+            <img class="front-face" src="img3/michaeljackson.jpg" alt="Michael Jackson">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio2/play12.mp3" data-framework="michaeljackson">
+            <img class="front-face" src="img3/play.jpg" alt="Chicagpo">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="prince">
+            <img class="front-face" src="img3/prince.jpg" alt="Prince">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio2/play13.mp3" data-framework="prince">
+            <img class="front-face" src="img3/play.jpg" alt="Purple Rain">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="thekillers">
+            <img class="front-face" src="img4/thekillers.jpg" alt="The Killers">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio2/play14.mp3" data-framework="thekillers">
+            <img class="front-face" src="img3/play.jpg" alt="Mr. Brightside">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="oasis">
+            <img class="front-face" src="img3/oasis.jpg" alt="OASIS">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio2/play15.mp3" data-framework="oasis">
+            <img class="front-face" src="img3/play.jpg" alt="Wonderwall">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="plainwhitets">
+            <img class="front-face" src="img3/plainwhitets.jpg" alt="Plain White T's">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio2/play16.mp3" data-framework="plainwhitets">
+            <img class="front-face" src="img3/play.jpg" alt="Hey There Delilah">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="thescript">
+            <img class="front-face" src="img4/thescript.jpg" alt="The Script">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio2/play17.mp3" data-framework="thescript">
+            <img class="front-face" src="img3/play.jpg" alt="The Man Who Cant't Be Moved">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="geese">
+            <img class="front-face" src="img2/geese.jpg" alt="Geese">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio2/play18.mp3" data-framework="geese">
+            <img class="front-face" src="img3/play.jpg" alt="Cobra">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="feist">
+            <img class="front-face" src="img2/feist.jpg" alt="Feist">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio2/play19.mp3" data-framework="feist">
+            <img class="front-face" src="img3/play.jpg" alt="My Moon My Man">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="drdog">
+            <img class="front-face" src="img2/drdog.jpg" alt="Dr. Dog">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio2/play20.mp3" data-framework="drdog">
+            <img class="front-face" src="img3/play.jpg" alt="Where'd All the Time Go?">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="lorde">
+            <img class="front-face" src="img2/lorde.jpg" alt="Lorde">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio3/play21.mp3" data-framework="lorde">
+            <img class="front-face" src="img3/play.jpg" alt="Ribs">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="katyperry">
+            <img class="front-face" src="img2/katyperry.jpg" alt="Katy Perry">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio3/play22.mp3" data-framework="katyperry">
+            <img class="front-face" src="img3/play.jpg" alt="The One That Got Away">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="gracieabrams">
+            <img class="front-face" src="img2/gracieabrams.jpg" alt="Gracie Abrams">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio3/play23.mp3" data-framework="gracieabrams">
+            <img class="front-face" src="img3/play.jpg" alt="Close To You">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="blackeyedpeas">
+            <img class="front-face" src="img1/blackeyedpeas.jpg" alt="Black Eyed Peas">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio3/play24.mp3" data-framework="blackeyedpeas">
+            <img class="front-face" src="img3/play.jpg" alt="Pump It">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="justintimberlake">
+            <img class="front-face" src="img2/justintimberlake.jpg" alt="Justin Timberlake">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio3/play25.mp3" data-framework="justintimberlake">
+            <img class="front-face" src="img3/play.jpg" alt="Mirrors">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="justinbieber">
+            <img class="front-face" src="img2/justinbieber.jpg" alt="Justin Bieber">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio3/play26.mp3" data-framework="justinbieber">
+            <img class="front-face" src="img3/play.jpg" alt="Baby">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="carlyraejepsen">
+            <img class="front-face" src="img1/carlyraejepsen.jpg" alt="Carly Rae Jepsen">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio3/play27.mp3" data-framework="carlyraejepsen">
+            <img class="front-face" src="img3/play.jpg" alt="Call Me Maybe">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="rihanna">
+            <img class="front-face" src="img3/rihanna.jpg" alt="Rihanna">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio3/play28.mp3" data-framework="rihanna">
+            <img class="front-face" src="img3/play.jpg" alt="Don't Stop the Music">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="bellakay">
+            <img class="front-face" src="img1/bellakay.jpg" alt="Bella Kay">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio3/play29.mp3" data-framework="bellakay">
+            <img class="front-face" src="img3/play.jpg" alt="iloveitiloveitiloveit">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="bellbivdevoe">
+            <img class="front-face" src="img1/bellbivdevoe.jpg" alt="Bell Biv Devoe">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio3/play30.mp3" data-framework="bellbivdevoe">
+            <img class="front-face" src="img3/play.jpg" alt="Poison">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="florenceroad">
+            <img class="front-face" src="img2/florenceroad.jpg" alt="Florence Road">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio4/play31.mp3" data-framework="florenceroad">
+            <img class="front-face" src="img3/play.jpg" alt="Hanging Out to Dry">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="harrystyles">
+            <img class="front-face" src="img2/harrystyles.jpg" alt="Harry Styles">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio4/play32.mp3" data-framework="harrystyles">
+            <img class="front-face" src="img3/play.jpg" alt="Satellite">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="louistomlinson">
+            <img class="front-face" src="img2/louistomlinson.jpg" alt="Louis Tomlinson">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio4/play33.mp3" data-framework="louistomlinson">
+            <img class="front-face" src="img3/play.jpg" alt="Written All Over Your Face">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="edsheeran">
+            <img class="front-face" src="img2/edsheeran.jpg" alt="Ed Sheeran">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio4/play34.mp3" data-framework="edsheeran">
+            <img class="front-face" src="img3/play.jpg" alt="Shape of You">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="tatemcrae">
+            <img class="front-face" src="img3/tatemcrae.jpg" alt="Tate McRae">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio4/play35.mp3" data-framework="tatemcrae">
+            <img class="front-face" src="img3/play.jpg" alt="Siren Sounds">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="taylorswift">
+            <img class="front-face" src="img3/taylorswift.jpg" alt="Taylor Swift">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio4/play36.mp3" data-framework="taylorswift">
+            <img class="front-face" src="img3/play.jpg" alt="Woderland">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="britneyspears">
+            <img class="front-face" src="img2/britneyspears.jpg" alt="Britney Spears">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio4/play37.mp3" data-framework="britneyspears">
+            <img class="front-face" src="img3/play.jpg" alt="Baby One More Time">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="ladygaga">
+            <img class="front-face" src="img1/ladygaga.jpg" alt="Lady Gaga">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio4/play38.mp3" data-framework="ladygaga">
+            <img class="front-face" src="img3/play.jpg" alt="Paparazzi">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="nellyfurtado">
+            <img class="front-face" src="img3/nellyfurtado.jpg" alt="Nelly Furtado">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio4/play39.mp3" data-framework="nellyfurtado">
+            <img class="front-face" src="img3/play.jpg" alt="Maneater">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="adele">
+            <img class="front-face" src="img1/adele.jpg" alt="Adele">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio4/play40.mp3" data-framework="adele">
+            <img class="front-face" src="img3/play.jpg" alt="Set Fire to the Rain">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="radiohead">
+            <img class="front-face" src="img3/radiohead.jpg" alt="Radiohead">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio5/play41.mp3" data-framework="radiohead">
+            <img class="front-face" src="img3/play.jpg" alt="Let Down">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="tearsforfears">
+            <img class="front-face" src="img4/tearsforfears.jpg" alt="Tears For Fears">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio5/play42.mp3" data-framework="tearsforfears">
+            <img class="front-face" src="img3/play.jpg" alt="Everybody Wants To Rule The World">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="billyidol">
+            <img class="front-face" src="img1/billyidol.jpg" alt="Billy Idol">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio5/play43.mp3" data-framework="billyidol">
+            <img class="front-face" src="img3/play.jpg" alt="Eyes Without a Face">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="jennie">
+            <img class="front-face" src="img2/jennie.jpg" alt="Jennie">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio5/play44.mp3" data-framework="jennie">
+            <img class="front-face" src="img3/play.jpg" alt="Fallen Angel">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="adela">
+            <img class="front-face" src="img1/adela.jpg" alt="Adela">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio5/play45.mp3" data-framework="adela">
+            <img class="front-face" src="img3/play.jpg" alt="Ain't in LA">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="addisonrae">
+            <img class="front-face" src="img1/addisonrae.jpg" alt="Addison Rae">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio5/play46.mp3" data-framework="addisonrae">
+            <img class="front-face" src="img3/play.jpg" alt="Fame is a Gun">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="zaralarsson">
+            <img class="front-face" src="img4/zaralarsson.jpg" alt="Zara Larsson">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio5/play47.mp3" data-framework="zaralarsson">
+            <img class="front-face" src="img3/play.jpg" alt="Midnight Sun">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="pinkpanthress">
+            <img class="front-face" src="img3/pinkpanthress.jpg" alt="Pink Panthress">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio5/play48.mp3" data-framework="pinkpanthress">
+            <img class="front-face" src="img3/play.jpg" alt="Illegal">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="oliviadean">
+            <img class="front-face" src="img3/oliviadean.jpg" alt="Olivia Dean">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio5/play49.mp3" data-framework="oliviadean">
+            <img class="front-face" src="img3/play.jpg" alt="Nice To Each Other">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="coldplay">
+            <img class="front-face" src="img1/coldplay.jpg" alt="Coldplay">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio5/play50.mp3" data-framework="coldplay">
+            <img class="front-face" src="img3/play.jpg" alt="Yellow">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="sza">
+            <img class="front-face" src="img3/sza.jpg" alt="SZA">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio6/play51.mp3" data-framework="sza">
+            <img class="front-face" src="img3/play.jpg" alt="Kill Bill">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="twentyonepilots">
+            <img class="front-face" src="img4/twentyonepilots.jpg" alt="Twenty One Pilots">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio6/play52.mp3" data-framework="twentyonepilots">
+            <img class="front-face" src="img3/play.jpg" alt="Drag Path">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="chaseatlantic">
+            <img class="front-face" src="img1/chaseatlantic.jpg" alt="Chase Atlantic">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio6/play53.mp3" data-framework="chaseatlantic">
+            <img class="front-face" src="img3/play.jpg" alt="Friends">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="thepolice">
+            <img class="front-face" src="img4/thepolice.jpg" alt="The Police">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio6/play54.mp3" data-framework="thepolice">
+            <img class="front-face" src="img3/play.jpg" alt="Every Breath You Take">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="thegoogoodolls">
+            <img class="front-face" src="img4/thegoogoodolls.jpg" alt="The Goo Goo Dolls">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio6/play55.mp3" data-framework="thegoogoodolls">
+            <img class="front-face" src="img3/play.jpg" alt="Iris">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="billieeilish">
+            <img class="front-face" src="img1/billieeilish.jpg" alt="Billie Eilish">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio6/play56.mp3" data-framework="billieeilish">
+            <img class="front-face" src="img3/play.jpg" alt="BIRDS OF A FEATHER">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="thefray">
+            <img class="front-face" src="img4/thefray.jpg" alt="The Fray">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio6/play57.mp3" data-framework="thefray">
+            <img class="front-face" src="img3/play.jpg" alt="Look After You">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="miguel">
+            <img class="front-face" src="img3/miguel.jpg" alt="Miguel">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio6/play58.mp3" data-framework="miguel">
+            <img class="front-face" src="img3/play.jpg" alt="Sure Thing">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="frankocean">
+            <img class="front-face" src="img2/frankocean.jpg" alt="Frank Ocean">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio6/play59.mp3" data-framework="frankocean">
+            <img class="front-face" src="img3/play.jpg" alt="White Ferrari">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="arcticmonkeys">
+            <img class="front-face" src="img1/arcticmonkeys.jpg" alt="Arctic Monkeys">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio6/play60.mp3" data-framework="arcticmonkeys">
+            <img class="front-face" src="img3/play.jpg" alt="Do I Wanna Know?">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="the1975">
+            <img class="front-face" src="img4/the1975.jpg" alt="The 1975">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio7/play61.mp3" data-framework="the1975">
+            <img class="front-face" src="img3/play.jpg" alt="About You">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <!-- <div class="memory-card" data-framework="onerepublic">
+            <img class="front-face" src="img3/onerepublic.jpg" alt="One Republic">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio7/play62.mp3" data-framework="onerepublic">
+            <img class="front-face" src="img3/play.jpg" alt="Counting Stars">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div> -->
+
+        <div class="memory-card" data-framework="chappelroan">
+            <img class="front-face" src="img1/chappelroan.jpg" alt="Chappel Roan">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio7/play63.mp3" data-framework="chappelroan">
+            <img class="front-face" src="img3/play.jpg" alt="Good Luck, Babe!">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="backstreetboys">
+            <img class="front-face" src="img1/backstreetboys.jpg" alt="Backstreet Boys">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio7/play64.mp3" data-framework="backstreetboys">
+            <img class="front-face" src="img3/play.jpg" alt="I Want It That Way">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="avrillavigne">
+            <img class="front-face" src="img1/avrillavigne.jpg" alt="Avril Lavigne">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio7/play65.mp3" data-framework="avrillavigne">
+            <img class="front-face" src="img3/play.jpg" alt="Complicated">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="maroon5">
+            <img class="front-face" src="img2/maroon5.jpg" alt="Maroon 5">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio7/play66.mp3" data-framework="maroon5">
+            <img class="front-face" src="img3/play.jpg" alt="Maps">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="5secondsofsummer">
+            <img class="front-face" src="img1/5secondsofsummer.jpg" alt="5 Seconds of Summer">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio7/play67.mp3" data-framework="5secondsofsummer">
+            <img class="front-face" src="img3/play.jpg" alt="She Looks So Perfect">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="neyo">
+            <img class="front-face" src="img3/neyo.jpg" alt="Ne-Yo">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio7/play68.mp3" data-framework="neyo">
+            <img class="front-face" src="img3/play.jpg" alt="Miss Independent">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-framework="brunomars">
+            <img class="front-face" src="img1/brunomars.jpg" alt="Bruno Mars">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+        <div class="memory-card" data-audio="audio7/play69.mp3" data-framework="brunomars">
+            <img class="front-face" src="img3/play.jpg" alt="Just The Way You Are">
+            <img class="back-face" src="img1/cardcover.jpg" alt="Cover">
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    
+    <script>
+    function gameWon() {
+        // Big burst
+        confetti({
+            particleCount: 300,
+            spread: 150,
+            origin: { y: 0.6 }
+        });
+        // Extra bursts
+        setTimeout(() => {
+            confetti({
+                particleCount: 200,
+                spread: 180,
+                origin: { x: 0.2, y: 0.7 }
+            });
+            
+            confetti({
+                particleCount: 200,
+                spread: 180,
+                origin: { x: 0.8, y: 0.7 }
+            });
+        }, 300);
+    }
+
+</script>
+
+    <script src="script.js"></script>
+</body>
+</html>

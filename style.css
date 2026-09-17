@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background: #ffb7ce;
+}
+ 
+.memory-game {
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    perspective: 1000px;
+    /*to fully center it*/
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.memory-card {
+    width: 100%;
+    height: auto; 
+    aspect-ratio: 1 / 1;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.memory-card.flip{
+    transform: rotateY(180deg);
+}
+
+.front-face, 
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 8%;
+    position: absolute;
+    border-radius: 5px;
+    background: #d6567c;
+
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.front-face img,
+.back-face img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+#restart {
+    display: none;
+    padding: 15px 35px;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    background: #f3d1db;
+    
+    /*so the button is in the middle overlaying the cards*/
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /*this makes sure it stays on top*/
+}
+
+.memory-game h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .memory-game {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto repeat(6, 1fr);
+    }
+}

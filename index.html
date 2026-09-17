@@ -715,21 +715,21 @@
     function gameWon() {
         // Big burst
         confetti({
-            particleCount: 300,
-            spread: 150,
+            particleCount: 350,
+            spread: 180,
             origin: { y: 0.6 }
         });
         // Extra bursts
         setTimeout(() => {
             confetti({
-                particleCount: 200,
-                spread: 180,
+                particleCount: 250,
+                spread: 210,
                 origin: { x: 0.2, y: 0.7 }
             });
             
             confetti({
-                particleCount: 200,
-                spread: 180,
+                particleCount: 250,
+                spread: 210,
                 origin: { x: 0.8, y: 0.7 }
             });
         }, 300);

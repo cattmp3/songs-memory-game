@@ -87,8 +87,9 @@ body {
 
 @media (max-width: 600px) {
     .memory-game {
+        display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 8px;
+        gap: 6px;
         width: 100%;
         box-sizing: border-box;
     }

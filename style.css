@@ -87,16 +87,19 @@ body {
 
 @media (max-width: 600px) {
     .memory-game {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 8px;
+        height: auto;
+        min-height: 0;
 
         width: 100%;
         box-sizing: border-box;
+        padding: 10px;
 
-        /* IMPORTANT */
-        height: auto;
-        min-height: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto repeat(6, auto);
+
+        gap: 8px;
+
         align-content: start;
         justify-content: start;
     }

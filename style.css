@@ -87,14 +87,23 @@ body {
 
 @media (max-width: 600px) {
     .memory-game {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         gap: 8px;
+
         width: 100%;
         box-sizing: border-box;
+
+        /* IMPORTANT */
+        height: auto;
+        min-height: 0;
+        align-content: start;
+        justify-content: start;
     }
 
     .card {
         min-width: 0;
+        width: 100%;
         aspect-ratio: 1 / 1;
     }
 }

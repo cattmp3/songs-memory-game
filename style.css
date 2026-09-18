@@ -88,14 +88,6 @@ body {
 @media (max-width: 600px) {
     .memory-game {
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        gird-template-rows: auto repeat(6, minmax(0, 1fr));
-        gap: 8px;
-        width: 100%;
-        box-sizing: border-box;
+        gird-template-rows: auto repeat(6, minmax(0, 1fr));
     }
-
-    .memory-card {
-        min-width: 0;
-        aspect-ratio: 1 / 1;
-     }
 }
